@@ -1,19 +1,21 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-
+import Container from 'react-bootstrap/Container'
+import Nav from 'react-bootstrap/Nav'
+import Navbar from 'react-bootstrap/Navbar'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUser, faCalendar, faMedal, faLaptop } from '@fortawesome/free-solid-svg-icons'
 
 export default function Navigation (){
+
     return (
         
         <div className='navigation'>
-      <Navbar bg="light" data-bs-theme="light" >
-        <Container id="nav">
-          <Navbar.Brand href="#home" id="title">Title</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Leaderboard</Nav.Link>
-            <Nav.Link href="#pricing">Log-in</Nav.Link>
+      <Navbar bg="light" data-bs-theme="light"fixed="bottom" position="sticky">
+        <Container className="nav">
+          <Nav id="nav">
+            <Nav.Link href="/"><FontAwesomeIcon icon={faUser} size="3x"/></Nav.Link>
+            <Nav.Link href="/Availability"><FontAwesomeIcon icon={faCalendar} size="3x" /></Nav.Link>
+            <Nav.Link href="/IcebreakerQuestions"><FontAwesomeIcon icon={faLaptop} size="3x" /></Nav.Link>
+            <Nav.Link href="/Leaderboard"><FontAwesomeIcon icon={faMedal} size="3x" /></Nav.Link>
           </Nav>
         </Container>
       </Navbar>
