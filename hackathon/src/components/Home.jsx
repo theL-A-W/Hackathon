@@ -4,7 +4,7 @@ export default function Home (){
     return (
         
         <div className="home">
-              <Leaderboard/>
+            <div id="app-title">Icebreaker</div>
             
         </div>
 )

@@ -1,4 +1,4 @@
-
+import Main from './components/Main'
 import Navigation from './components/Nav'
 import Home from './components/Home'
 
@@ -9,8 +9,8 @@ function App() {
 
   return (
     <>
+  <Main/>
   <Navigation/>
-  <Home/>
     </>
   )
 }

@@ -1,7 +1,6 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 body{
@@ -42,26 +41,32 @@ body{
 .read-the-docs {
   color: #888;
 }
+.nav{
+  background-color: white;
+  padding: 5%;
+  box-shadow: 0px 0px 4px rgb(153, 151, 151);
+  position: sticky;
+}
 #nav{
-  background-color: rgb(232, 230, 230);
-  padding: 1.5%;
+  display: flex;
+  justify-content: space-around;
 }
 .home{
   width: 100%;
-  height: 100vh;
-  margin: 4vh 0;
-  background-color: rgb(232, 230, 230);
+  height: 88vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-y: scroll;
 }
 #title{
   font-size: 5vh;
 }
 .leaderboard{
   background-color: white;
-  height: 25%;
-  width: 55%;
+  height: 88vh;
+  width: 100%;
+  margin: 0;
   box-shadow: 0px 0px 4px rgb(153, 151, 151);
   overflow-y: scroll;
 }
@@ -74,7 +79,92 @@ body{
   background-color: white;
   box-shadow: 0px 0px 4px rgb(153, 151, 151);
   padding: 5vh 10vw;
+  height: 78vh;
+  overflow-y: scroll;
 }
 #question-label{
+  display: inline-flex;
+  justify-content: flex-start;
+  font-weight: 700;
+  font-size: 2.2vh;
+}
+#question-text{
+  font-weight: 500;
+}
+
+#num-points{
+  font-size: 2vh;
+}
+#profile-img-current-user{
+  height:20vh;
+  width: 40vw;
+  border-radius: 50%;
+  border-color: transparent;
+  background-image: url("https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png");
+  background-position: center;
+  background-size: cover;
+}
+#profile-img-other-user{
+  height:8vh;
+  width: 16vw;
+  border-radius: 50%;
+  border-color: transparent;
+  background-image: url("https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-self: flex-start;
+  align-self: center;
+}
+.leaderboard-group{
+  display: grid;
+  grid-template-columns: auto auto;
+  border-bottom: 1px solid black;
+  padding: 3%;
+  font-size: 3vh;
+}
+#leaderboard-title{
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 5%;
+}
+#leaderboard-list{
+display: grid;
+justify-self: flex-start;
+}
+#current-user-name{
+  font-size: 2.4vh;
+}
+.questions{
+  margin-top: 4vh;
+}
+.availability{
+  height: 84vh;
+  margin: 0 5vw;
+  margin-top: 5vh;
+overflow-y: scroll;
+}
+#date{
+  margin: 15vh 0;
+}
+#date-input{
+  height: 8vh;
+  width: 80vw;
+  border: 2px solid black;
+  padding: 1.5vw;
+}
+#next-button{
+  height: 7vh;
   width: 30vw;
+  box-shadow: 0px 0px 4px rgb(153, 151, 151);
+  margin: 2%;
+}
+#done-button{
+  height: 7vh;
+  width: 30vw;
+  box-shadow: 0px 0px 4px rgb(153, 151, 151);
+  margin: 2%;
+}
+#app-title{
+  font-size: 6vh;
 }
